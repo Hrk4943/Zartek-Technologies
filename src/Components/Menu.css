@@ -1,0 +1,25 @@
+.scrollbar-hide::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar-thumb {
+    background: #ccc; 
+    border-radius: 10px;  
+  }
+  @media (min-width: 768px) {
+    .border-b-2 {
+      --border-width: 119%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .border-b-2 {
+      --border-width: 435%;
+    }
+  }
+
