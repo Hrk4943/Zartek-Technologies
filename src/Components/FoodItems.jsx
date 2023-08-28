@@ -12,13 +12,11 @@ function FoodItems() {
       .get(apiUrl)
       .then((response) => {
         setFoodItems(response.data[0]?.table_menu_list[0]?.category_dishes);
-        setAddOn(response.data[0]?.table_menu_list[0]?.category_dishes.add)
       })
       .catch((error) => {
         console.error("Error", error);
       });
   }, []);
-  console.log("Food items:", foodItems);
 
   return (
     <>
